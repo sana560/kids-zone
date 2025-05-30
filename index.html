@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <!-- Bootstrap 5 CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <!-- Animate.css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <!-- custom css-->
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <!-- Navigation -->
+    <!-- navagation bar main boostrap ki class use ki gai hai lg ki form 
+      or isko sticky kia gya hai or is main data-bs-target
+      ko use kia hai jo interactive behaviour dyny k leay use hota hai
+       -->
+   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">FunToon World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- collapse navbar-collapse ka matlab hota hai ek aisa section jo chhupi hoti hai chhoti screen pe aur hamburger button se dikhai jati hai. -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="characters.html">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="video.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games.html">Games</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content">
+                <!--  ye combination CSS classes ka hai — jisme se kuch aapke element ko style dete hain aur kuch animation apply karte hain.  -->
+                <h1 class="hero-title animate__animated animate__fadeInDown">Welcome to FunToon World!</h1>
+                <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">Where imagination comes to life with your favorite cartoon characters!</p>
+                <a href="#characters" class="btn btn-primary animate__animated animate__fadeIn animate__delay-2s">Explore Characters</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Characters Section -->
+<section class="py-5 my-5" id="characters">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title animate__animated animate__fadeIn">Meet Our Characters</h2>
+            <p class="text-muted">Discover all your favorite cartoon friends</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="character-card animate__animated animate__fadeInUp">
+                    <img src="easter-bunny.jpg" alt="Bunny" class="img-fluid character-img">
+                    <div class="p-4">
+                        <span class="badge-cartoon">New</span>
+                        <h3 class="character-name">Bouncy Bunny</h3>
+                        <p class="character-desc">Always jumping with joy and spreading happiness wherever he goes!</p>
+                        <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="character-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="dino-.jpg" alt="Dino" class="img-fluid character-img">
+                    <div class="p-4">
+                        <span class="badge-cartoon">Popular</span>
+                        <h3 class="character-name">Dizzy Dino</h3>
+                        <p class="character-desc">A friendly dinosaur who loves adventures and making new friends!</p>
+                        <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="character-card animate__animated animate__fadeInUp animate__delay-2s">
+                    <img src="unicon.png" alt="Unicorn" class="img-fluid character-img">
+                    <div class="p-4">
+                        <span class="badge-cartoon">Magical</span>
+                        <h3 class="character-name">Sparkle Unicorn</h3>
+                        <p class="character-desc">Magical unicorn who can make dreams come true with her sparkles!</p>
+                        <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Section -->
+<section class="video-section py-5" id="videos">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title animate__animated animate__fadeIn">Watch Our Videos</h2>
+            <p class="text-dark">Fun and educational content for kids</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="video-container animate__animated animate__zoomIn">
+                    <!-- Ye Bootstrap 5 ki predefined utility classes hain, jo kisi element (especially videos ya iframes)
+                      ko responsive aspect ratio dene ke liye use hoti hain -->
+                    <div class="ratio ratio-16x9">
+                        <iframe src="1st video.mp4" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="video-thumbnail position-relative  img-fluid rounded shadow-lg mt-3 controls max-width: 100%; height: auto;">
+                  <iframe src="adventurats.mp4" allowfullscreen></iframe>
+                    <div class="video-overlay">
+                        <div class="play-btn">
+                            <!-- Ye Font Awesome icon classes hain — jinka use aap kisi HTML element me icon show karne ke liye karte ho. -->
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt-3">Adventure Time</h4>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="video-thumbnail position-relative  img-fluid rounded shadow-lg mt-3 controls">
+                  <iframe src="video 3.mp4" allowfullscreen></iframe>
+                    <div class="video-overlay">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt-3">Learning Fun</h4>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="video-thumbnail position-relative   img-fluid rounded shadow-lg mt-3 controls>">
+                  <iframe src="video 2.mp4" allowfullscreen></iframe>
+                    <div class="video-overlay">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt-3">Sing Along</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="testimonial-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title animate__animated animate__fadeIn">What Parents Say</h2>
+            <p class="text-muted">Hear from our happy families</p>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel ka inner wrapper jisme sari slides (carousel-item) hoti hain.
+              Ye ek tarah ka container hai jisme images ya content slides show hoti hain. -->
+            <div class="carousel-inner">
+                <!-- Ye Bootstrap ki carousel component ke andar use hone wali do important classes ka combination hai -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="testimonial-card text-center">
+                                <p class="testimonial-text">"My kids absolutely love FunToon World! The characters are so engaging and the content is both fun and educational. It's the only screen time I feel good about."</p>
+                                <h5 class="testimonial-author">- Sarah Johnson</h5>
+                                <div class="mt-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="testimonial-card text-center">
+                                <p class="testimonial-text">"As a teacher, I appreciate how FunToon World combines entertainment with learning. The characters teach valuable lessons in a way that resonates with children."</p>
+                                <h5 class="testimonial-author">- Michael Brown</h5>
+                                <div class="mt-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="testimonial-card text-center">
+                                <p class="testimonial-text">"The quality of animation and storytelling is exceptional. My toddler has learned so many new words and concepts from watching these cartoons. Highly recommended!"</p>
+                                <h5 class="testimonial-author">- Emily Davis</h5>
+                                <div class="mt-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ye ek left/previous navigation button hoti hai,
+              jise click karne par previous slide show hoti hai. -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators mt-3 position-static">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section py-5 text-center">
+    <div class="container">
+        <h2 class="mb-4 animate__animated animate__fadeIn">Join Our Fun Club!</h2>
+        <p class="mb-5">Subscribe to get updates on new characters, videos, and special offers!</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form class="animate__animated animate__fadeInUp">
+                    <!--  -->
+                    <input type="email" class="form-control newsletter-input mb-3" placeholder="Enter your email">
+                    <button type="submit" class="btn newsletter-btn">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="mb-4">FunToon World</h5>
+                <p>Bringing joy and learning to children through engaging cartoon characters and stories since 2010.</p>
+                <div class="social-icons mt-4">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5>Quick Links</h5>
+                <a href="#home">Home</a>
+                <a href="#characters">Characters</a>
+                <a href="#videos">Videos</a>
+                <a href="#games">Games</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5>Characters</h5>
+                <a href="#">Bouncy Bunny</a>
+                <a href="#">Dizzy Dino</a>
+                <a href="#">Sparkle Unicorn</a>
+                <a href="#">Jumpy Frog</a>
+                <a href="#">Clever Fox</a>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i> 123 Cartoon Street, Funville</p>
+                <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope me-2"></i> hello@funtoonworld.com</p>
+            </div>
+        </div>
+        <div class="text-center copyright">
+            <p>&copy; 2023 FunToon World. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script>
+    // Animation on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        const animatedElements = document.querySelectorAll('.animate__animated');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const animation = entry.target.getAttribute('data-animation');
+                    entry.target.classList.add('animate__animated', animation);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        animatedElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
